@@ -144,7 +144,7 @@ app.post("/api/initiate-payment", async (req, res) => {
       body: JSON.stringify({
         api_key: HASHPAY_API_KEY,
         account_id: HASHPAY_ACCOUNT_ID,
-        amount: amount.toString(),
+        amount: amount,
         msisdn: phone,
         reference: reference,
       }),
